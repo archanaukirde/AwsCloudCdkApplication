@@ -1,0 +1,16 @@
+{
+  "name": "graphql-demo",
+  "version": "0.1.0",
+  "bin": {
+    "graphql-demo": "bin/graphql-demo.js"
+  },
+  "scripts": {
+    "build": "tsc --noEmit && esbuild src/lambda.ts --bundle --platform=node --sourcemap --outfile=dist/lambda.js",
+        "test": "tsc && jest"
+  },
+  
+  "dependencies": {
+    "aws-sdk": "^2.1334.0"
+   
+  }
+}
